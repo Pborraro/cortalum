@@ -69,7 +69,7 @@ if not st.session_state.finalizado:
             })
             if otro == "N":
                 st.session_state.finalizado = True
-            st.experimental_rerun()
+            st.rerun()
 
 if st.session_state.finalizado:
     pdf = FPDF()
